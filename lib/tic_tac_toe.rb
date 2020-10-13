@@ -40,6 +40,7 @@ class TicTacToe
     @board[index] = token
   end
   
+  
   def position_taken?(index)
     if @board[index] != " "
       return true
@@ -84,7 +85,6 @@ class TicTacToe
        
         
   def turn
-
     puts "Please choose a move 1 - 9"
     input = gets
     index = input_to_index(input)
@@ -105,6 +105,7 @@ class TicTacToe
     end
     false
   end
+  
   
   def full?
     #check each element
@@ -132,6 +133,7 @@ class TicTacToe
       @board[won?[0]]
     end
   end
+
 
   def play
     until over?
